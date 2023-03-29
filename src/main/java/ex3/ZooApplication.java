@@ -2,17 +2,17 @@ package ex3;
 
 public class ZooApplication {
 
-	public static void main(String[] args) {
-		Zoo zoo = new Zoo("Thoiry");
-		
-		zoo.addAnimal("Gazelle", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Zèbre", "MAMIFERE", "HERBIVORE");
-		zoo.addAnimal("Lion", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Panthère", "MAMMIFERE", "CARNIVORE");
-		zoo.addAnimal("Requin blanc", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Truite dorée", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Boa constrictor", "SERPENT", "CARNIVORE");
-		zoo.addAnimal("Python", "SERPENT", "CARNIVORE");
-	}
+    public static void main(String[] args) {
+        Zoo zoo = new Zoo("Thoiry");
+
+        zoo.addAnimal("Gazelle", TypeAnimal.MAMIFERE, Comportement.HERBIVORE);
+        zoo.addAnimal("Zèbre", TypeAnimal.MAMIFERE, Comportement.HERBIVORE);
+        zoo.addAnimal("Lion", TypeAnimal.MAMIFERE, Comportement.HERBIVORE);
+        zoo.addAnimal("Panthère", TypeAnimal.MAMIFERE, Comportement.CARNIVORE);
+        zoo.addAnimal("Requin blanc", TypeAnimal.POISSON, Comportement.HERBIVORE);
+        zoo.addAnimal("Truite dorée", TypeAnimal.POISSON, Comportement.HERBIVORE);
+        zoo.addAnimal("Boa constrictor", TypeAnimal.SERPENT, Comportement.CARNIVORE);
+        zoo.addAnimal("Python", TypeAnimal.SERPENT, Comportement.CARNIVORE);
+    }
 
 }
